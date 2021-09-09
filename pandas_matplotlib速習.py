@@ -7,7 +7,7 @@ Created on Thu Sep  9 19:19:02 2021
 
 import pandas as pd
 df = pd.read_csv("sample.csv")  # df:DataFrame 行と列が複数あるデータ型
-"""
+
 # 先頭から~行表示
 print(df.head())  # デフォルトでは5行(0~4行)表示
 print(df.head(3))  #先頭から3行表示
@@ -21,10 +21,11 @@ print(df[:4])  # スライスと同じ
 
 # .iloc[行, 列]
 print(df.iloc[:10, 0])
-"""
+
 # カラム名を指定して取得
 x = df["x"]  # x, yはSeries型(1列) Serisesが集まるとdf
 y = df["y"]
+
 
 import matplotlib.pyplot as plt
 # 散布図(scatter)
