@@ -25,6 +25,7 @@ XX_inv = np.dot(X, X_inv)
 
 # n行m列を変数に格納
 B = np.array([[1, 2, 3], [2, 3, 4]])  # 2行3列
+# B.shape  # (2, 3)
 row, col = B.shape  # row=2, col=3
 
 # 行ごとに処理したいときの例
